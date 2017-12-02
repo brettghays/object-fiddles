@@ -144,6 +144,7 @@ user2.email = "tyler.mcginnis@devmounta.in"
 //Create an empty object called methodCollection.
 
   //Code Here
+var methodCollection = {}
 
 
 
@@ -155,6 +156,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
  */
 
   //Code Here
+  methodCollection.alertHello = function(){alert('hello')}
+  methodCollection.logHello = function(){console.log('hello')}
 
 
 
@@ -163,6 +166,7 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 //Now call your alertHello and logHello methods.
 
   //Code Here
+  
 
 
 
@@ -180,10 +184,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
-
-
-
+  let makePerson = (name,birthday,ssn) => {
+    return {
+      name,
+      birthday,
+      ssn
+    }
+  }
   
 
 
@@ -194,5 +201,12 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
   //Code Here
+  let makeCard = (cardNumber,expirationDate,securityCode) => {
+    return {
+      cardNumber,
+      expirationDate,
+      securityCode
+    }
+  }
 
 
